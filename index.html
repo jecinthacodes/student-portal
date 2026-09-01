@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduFlow · COS 101</title>
+<title>EduFlow · COS 102</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -584,168 +584,6 @@ footer::before {
   padding: 4px 12px; border-radius: 20px; text-transform: uppercase;
 }
 
-/* ── LOGIN PAGE ── */
-#login-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 2rem 1.2rem;
-  background: var(--cream);
-  position: relative;
-  z-index: 200;
-}
-.login-box {
-  width: 100%;
-  max-width: 420px;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  box-shadow: 0 8px 48px rgba(26,18,8,0.1);
-  overflow: hidden;
-  animation: fadeUp 0.5s ease both;
-}
-.login-stripe {
-  height: 6px;
-  background: linear-gradient(90deg, var(--accent), var(--gold));
-}
-.login-body {
-  padding: 2.5rem 2rem 2rem;
-}
-.login-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: var(--ink);
-  margin-bottom: 0.2rem;
-}
-.login-logo span { color: var(--accent); }
-.login-tagline {
-  font-size: 0.8rem;
-  color: var(--ink-light);
-  margin-bottom: 2rem;
-  font-family: 'DM Mono', monospace;
-  letter-spacing: 0.5px;
-}
-.login-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--ink);
-  margin-bottom: 0.3rem;
-}
-.login-sub {
-  font-size: 0.82rem;
-  color: var(--ink-light);
-  margin-bottom: 1.8rem;
-}
-.login-field {
-  margin-bottom: 1.1rem;
-}
-.login-field label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--ink-mid);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.4rem;
-  font-family: 'DM Mono', monospace;
-}
-.login-field input {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  border: 1.5px solid var(--border);
-  border-radius: 10px;
-  background: var(--cream);
-  font-family: 'DM Mono', monospace;
-  font-size: 0.92rem;
-  color: var(--ink);
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  box-sizing: border-box;
-}
-.login-field input:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(200,73,42,0.1);
-}
-.login-field input::placeholder { color: var(--ink-light); opacity: 0.6; }
-.login-error {
-  display: none;
-  font-size: 0.78rem;
-  color: #c0392b;
-  background: rgba(192,57,43,0.07);
-  border: 1px solid rgba(192,57,43,0.15);
-  border-radius: 8px;
-  padding: 0.6rem 0.9rem;
-  margin-bottom: 1rem;
-  font-family: 'DM Mono', monospace;
-}
-.login-error.show { display: block; }
-.login-btn {
-  width: 100%;
-  padding: 0.9rem;
-  background: var(--ink);
-  color: var(--cream);
-  border: none;
-  border-radius: 10px;
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s;
-  margin-top: 0.5rem;
-  letter-spacing: 0.3px;
-}
-.login-btn:hover { background: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(200,73,42,0.25); }
-.login-btn:active { transform: translateY(0); }
-.login-footer-note {
-  text-align: center;
-  font-size: 0.72rem;
-  color: var(--ink-light);
-  margin-top: 1.5rem;
-  line-height: 1.5;
-}
-.login-footer-note b { color: var(--accent); }
-
-/* ── NAV USER CHIP ── */
-.nav-user {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--ink);
-  color: var(--cream);
-  border: none;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  cursor: pointer;
-  transition: all 0.2s;
-  letter-spacing: 0.5px;
-}
-.nav-user:hover { background: var(--accent); }
-.nav-user-dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: #2ecc71;
-  box-shadow: 0 0 6px #2ecc71;
-  flex-shrink: 0;
-}
-.nav-login-btn {
-  background: none;
-  border: 1.5px solid var(--border);
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  color: var(--ink-light);
-  cursor: pointer;
-  transition: all 0.2s;
-  letter-spacing: 0.5px;
-}
-.nav-login-btn:hover { border-color: var(--accent); color: var(--accent); }
-
 /* ── RESPONSIVE ── */
 @media (max-width: 1080px) {
   .hero { padding: 60px 32px 48px; gap: 48px; }
@@ -773,44 +611,8 @@ footer::before {
 <!-- TOAST CONTAINER -->
 <div id="toast-container"></div>
 
-<!-- LOGIN PAGE -->
-<div id="login-page">
-  <div class="login-box">
-    <div class="login-stripe"></div>
-    <div class="login-body">
-      <div class="login-logo">NASCO<span>.</span></div>
-      <div class="login-tagline">CSC 1/4 · UNICROSS · 2025/2026</div>
-      <div class="login-heading">Welcome back</div>
-      <div class="login-sub">Sign in with your registration number and password to access the portal.</div>
-      <div class="login-error" id="login-error">&#10060; Invalid registration number or password. Please try again.</div>
-      <div class="login-field">
-        <label>
-          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          Registration Number
-        </label>
-        <input type="text" id="login-reg" placeholder="e.g. 25/CSC/100" autocomplete="username" spellcheck="false"/>
-      </div>
-      <div class="login-field">
-        <label>
-          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Password
-        </label>
-        <input type="password" id="login-pass" placeholder="Enter your password" autocomplete="current-password"/>
-      </div>
-      <button class="login-btn" id="login-btn">
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:6px;"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-        Sign In
-      </button>
-      <div class="login-footer-note">
-        Your default password is your <b>registration number</b>.<br/>
-        Contact your class rep if you have trouble logging in.
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- NAV -->
-<nav id="main-nav" style="display:none;">
+<nav>
   <div class="nav-brand">
     <div class="logo">NASCO<span>.</span></div>
     <span class="course-tag">CSC 1/4</span>
@@ -821,16 +623,9 @@ footer::before {
     <a href="#reps" data-section="reps">Class Reps</a>
     <a href="#schedule" data-section="schedule">Schedule</a>
   </div>
-  <div id="nav-auth-area">
-    <button class="nav-user" id="nav-user-chip" style="display:none;" onclick="doLogout()" title="Click to log out">
-      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-      <span id="nav-user-label">25/CSC/100</span>
-      <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="opacity:0.5;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-    </button>
-  </div>
 </nav>
 
-<div id="main-view" style="display:none;">
+<div id="main-view">
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-left">
@@ -845,18 +640,18 @@ footer::before {
   <div class="hero-visual" id="hero-visual-click" style="cursor:pointer;" title="Click to view full timetable">
     <div class="visual-label">Next Lecture</div>
     <div class="visual-time">8:00</div>
-    <div class="visual-day">Wednesday morning</div>
+    <div class="visual-day">Monday morning</div>
     <div class="visual-next">
-      <div class="visual-next-label">COS 101 · Main Hall</div>
-      <div class="visual-next-title">Intro to Computer Science</div>
-      <div class="visual-next-time">Wed, 8:00 AM – 10:00 AM</div>
+      <div class="visual-next-label">COS 102 · NSB 2</div>
+      <div class="visual-next-title">Problem Solving and Algorithms</div>
+      <div class="visual-next-time">Mon, 8:00 AM – 10:00 AM</div>
     </div>
     <div class="visual-next" style="opacity:0.6">
-      <div class="visual-next-label">MTH 101 · Room 204</div>
-      <div class="visual-next-title">Mathematics I</div>
-      <div class="visual-next-time">Thu, 10:00 AM – 12:00 PM</div>
+      <div class="visual-next-label">MTH 102 · NSB 3</div>
+      <div class="visual-next-title">Elementary Mathematics</div>
+      <div class="visual-next-time">Tue, 10:00 AM – 12:00 PM</div>
     </div>
-    <span class="semester-pill">Spring 2026</span>
+    <span class="semester-pill">Fall 2026</span>
   </div>
 </section>
 
@@ -870,7 +665,7 @@ footer::before {
     <div class="card" id="schedule" style="animation: fadeUp 0.6s 0.3s ease both;">
       <div class="card-header">
         <div class="card-title">
-          <div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <div class="card-icon">📚</div>
           <h2>Course Schedule</h2>
         </div>
         <span class="card-badge teal">7 courses</span>
@@ -887,94 +682,94 @@ footer::before {
       </div>
       <div class="courses-body">
 
-        <div class="course-card" data-days="MON THU">
-          <div class="course-stripe" style="background:#3498db"></div>
-          <div class="course-info">
-            <div class="course-code">MTH 101</div>
-            <div class="course-name">Mathematics I — Algebra & Calculus</div>
-          </div>
-          <div class="course-right">
-            <div class="course-days-wrap"><span class="course-day">MON</span><span class="course-day">THU</span></div>
-            <div class="course-time">10:00 – 12:00 PM</div>
-            <div class="course-venue"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Room 204, Block B</div>
-          </div>
-        </div>
-
-        <div class="course-card" data-days="TUE FRI">
-          <div class="course-stripe" style="background:#e67e22"></div>
-          <div class="course-info">
-            <div class="course-code">PHY 101</div>
-            <div class="course-name">Physics I — Mechanics & Waves</div>
-          </div>
-          <div class="course-right">
-            <div class="course-days-wrap"><span class="course-day">TUE</span><span class="course-day">FRI</span></div>
-            <div class="course-time">8:00 – 10:00 AM</div>
-            <div class="course-venue"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Physics Hall, Block C</div>
-          </div>
-        </div>
-
-        <div class="course-card" data-days="WED">
+        <div class="course-card" data-days="MON">
           <div class="course-stripe" style="background:#c8492a"></div>
           <div class="course-info">
-            <div class="course-code">COS 101</div>
-            <div class="course-name">Introduction to Computer Science</div>
+            <div class="course-code">COS 102</div>
+            <div class="course-name">Problem Solving and Algorithms</div>
           </div>
           <div class="course-right">
-            <div class="course-days-wrap"><span class="course-day">WED</span></div>
+            <div class="course-days-wrap"><span class="course-day">MON</span></div>
             <div class="course-time">8:00 – 10:00 AM</div>
-            <div class="course-venue"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Main Hall, Block A</div>
+            <div class="course-venue">📍 NSB 2</div>
           </div>
         </div>
 
         <div class="course-card" data-days="TUE">
-          <div class="course-stripe" style="background:#9b59b6"></div>
+          <div class="course-stripe" style="background:#3498db"></div>
           <div class="course-info">
-            <div class="course-code">CSC 181</div>
-            <div class="course-name">Computer Science Laboratory</div>
+            <div class="course-code">MTH 102</div>
+            <div class="course-name">Elementary Mathematics</div>
           </div>
           <div class="course-right">
             <div class="course-days-wrap"><span class="course-day">TUE</span></div>
-            <div class="course-time">2:00 – 4:00 PM</div>
-            <div class="course-venue"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Lab A, ICT Centre</div>
+            <div class="course-time">10:00 AM – 12:00 PM</div>
+            <div class="course-venue">📍 NSB 3</div>
           </div>
         </div>
 
-        <div class="course-card" data-days="MON WED">
-          <div class="course-stripe" style="background:#e74c3c"></div>
+        <div class="course-card" data-days="WED">
+          <div class="course-stripe" style="background:#e67e22"></div>
           <div class="course-info">
-            <div class="course-code">STA 111</div>
-            <div class="course-name">Introduction to Statistics</div>
+            <div class="course-code">PHY 102</div>
+            <div class="course-name">General Physics II</div>
           </div>
           <div class="course-right">
-            <div class="course-days-wrap"><span class="course-day">MON</span><span class="course-day">WED</span></div>
-            <div class="course-time">12:00 – 2:00 PM</div>
-            <div class="course-venue"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Room 301, Block D</div>
+            <div class="course-days-wrap"><span class="course-day">WED</span></div>
+            <div class="course-time">8:00 – 10:00 AM</div>
+            <div class="course-venue">📍 NSB 4</div>
           </div>
         </div>
 
         <div class="course-card" data-days="FRI">
           <div class="course-stripe" style="background:#d4a017"></div>
           <div class="course-info">
-            <div class="course-code">PHY 107</div>
-            <div class="course-name">Physics Lab — Practical Sessions</div>
+            <div class="course-code">PHY 108</div>
+            <div class="course-name">General Practical Physics II</div>
           </div>
           <div class="course-right">
             <div class="course-days-wrap"><span class="course-day">FRI</span></div>
             <div class="course-time">10:00 AM – 1:00 PM</div>
-            <div class="course-venue"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Physics Lab, Block C</div>
+            <div class="course-venue">📍 NSB 5</div>
+          </div>
+        </div>
+
+        <div class="course-card" data-days="MON THU">
+          <div class="course-stripe" style="background:#8e44ad"></div>
+          <div class="course-info">
+            <div class="course-code">CSC 102</div>
+            <div class="course-name">Intro to Computer Hardware and Electronics</div>
+          </div>
+          <div class="course-right">
+            <div class="course-days-wrap"><span class="course-day">MON</span><span class="course-day">THU</span></div>
+            <div class="course-time">12:00 – 2:00 PM</div>
+            <div class="course-venue">📍 NSB 6</div>
+          </div>
+        </div>
+
+        <div class="course-card" data-days="WED">
+          <div class="course-stripe" style="background:#9b59b6"></div>
+          <div class="course-info">
+            <div class="course-code">CSC 182</div>
+            <div class="course-name">Computer Practical</div>
+          </div>
+          <div class="course-right">
+            <div class="course-days-wrap"><span class="course-day">WED</span></div>
+            <div class="course-time">2:00 – 4:00 PM</div>
+            <div class="course-venue">📍 NSB 7</div>
           </div>
         </div>
 
         <div class="course-card" data-days="THU">
           <div class="course-stripe" style="background:#1abc9c"></div>
           <div class="course-info">
-            <div class="course-code">GST 111</div>
-            <div class="course-name">Communication in English</div>
+            <div class="course-code">GST 112</div>
+            <div class="course-name">Nigerian Peoples and Culture</div>
           </div>
           <div class="course-right">
             <div class="course-days-wrap"><span class="course-day">THU</span></div>
             <div class="course-time">2:00 – 4:00 PM</div>
-            <div class="course-venue"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Arts Hall, Block E</div>
+            <div class="course-venue">📍 NSB 2</div>
           </div>
         </div>
 
@@ -985,12 +780,53 @@ footer::before {
     <div class="card" id="announcements" style="animation: fadeUp 0.6s 0.2s ease both;">
       <div class="card-header">
         <div class="card-title">
-          <div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8a5 5 0 0 1 0 8"/><path d="M3 11v2a1 1 0 0 0 1 1h1l3 3V8L5 11H4a1 1 0 0 0-1 1z"/><path d="M11.5 7.5a5 5 0 0 1 0 9"/></svg></div>
+          <div class="card-icon">📢</div>
           <h2>Announcements</h2>
         </div>
-        <span class="card-badge" id="ann-badge">3 New</span>
+        <span class="card-badge" id="ann-badge">5 New</span>
       </div>
       <div class="announcements-body">
+
+        <div class="ann-item pinned" data-id="ann4">
+          <div class="ann-avatar red">Dr</div>
+          <div class="ann-body">
+            <div class="ann-top">
+              <div class="ann-title-row">
+                <span class="ann-title">COS 102 Assignment — While & Do-While Loops</span>
+                <span class="ann-pin">📌 Pinned</span>
+              </div>
+              <div class="ann-actions">
+                <span class="ann-date">Aug 26, 2026</span>
+                <button class="ann-btn read-btn" title="Mark as read">✓ Read</button>
+                <button class="ann-btn dismiss-btn" title="Dismiss">✕</button>
+              </div>
+            </div>
+            <p class="ann-text">Write an algorithm using a while loop and a do-while loop to produce the sum and average of odd numbers between 1 and 100. Due Monday, August 31st by 11:59 PM. Submit via the portal.</p>
+            <div class="ann-meta">
+              <span class="ann-tag">📝 Assignment</span>
+              <span class="ann-tag">📅 Due Aug 31</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ann-item" data-id="ann5">
+          <div class="ann-avatar teal">CR</div>
+          <div class="ann-body">
+            <div class="ann-top">
+              <div class="ann-title-row"><span class="ann-title">Welcome Back — 2nd Semester Has Begun</span></div>
+              <div class="ann-actions">
+                <span class="ann-date">Jul 2026</span>
+                <button class="ann-btn read-btn" title="Mark as read">✓ Read</button>
+                <button class="ann-btn dismiss-btn" title="Dismiss">✕</button>
+              </div>
+            </div>
+            <p class="ann-text">CSC 1/4's 2nd Semester of the 2025/2026 session is now underway with 7 new courses. Check the Schedule tab for updated class times and venues (NSB 2–7).</p>
+            <div class="ann-meta">
+              <span class="ann-tag">📚 New Semester</span>
+              <span class="ann-tag">🗓 2025/2026</span>
+            </div>
+          </div>
+        </div>
 
         <div class="ann-item pinned" data-id="ann1">
           <div class="ann-avatar red">Dr</div>
@@ -998,19 +834,19 @@ footer::before {
             <div class="ann-top">
               <div class="ann-title-row">
                 <span class="ann-title">Mid-Semester Exam Schedule Released</span>
-                <span class="ann-pin"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="17" x2="12" y2="22"/><path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24z"/></svg> Pinned</span>
+                <span class="ann-pin">📌 Pinned</span>
               </div>
               <div class="ann-actions">
-                <span class="ann-date">Feb 14, 2026</span>
-                <button class="ann-btn read-btn" title="Mark as read"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Read</button>
-                <button class="ann-btn dismiss-btn" title="Dismiss"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+                <span class="ann-date">Feb 14, 2025</span>
+                <button class="ann-btn read-btn" title="Mark as read">✓ Read</button>
+                <button class="ann-btn dismiss-btn" title="Dismiss">✕</button>
               </div>
             </div>
-            <p class="ann-text">The mid-semester examination timetable has been published. COS 101 will be examined on March 5th, 2026 at 10:00 AM in the Main Auditorium. Please arrive 15 minutes early with your student ID.</p>
+            <p class="ann-text">The mid-semester examination timetable has been published. COS 101 will be examined on March 5th, 2025 at 10:00 AM in the Main Auditorium. Please arrive 15 minutes early with your student ID.</p>
             <div class="ann-meta">
-              <span class="ann-tag"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Main Auditorium</span>
-              <span class="ann-tag"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> March 5</span>
-              <span class="ann-tag"><svg width="10" height="10" viewBox="0 0 24 24" fill="#c0392b"><circle cx="12" cy="12" r="10"/></svg> Important</span>
+              <span class="ann-tag">📍 Main Auditorium</span>
+              <span class="ann-tag">📅 March 5</span>
+              <span class="ann-tag">🔴 Important</span>
             </div>
           </div>
         </div>
@@ -1021,15 +857,15 @@ footer::before {
             <div class="ann-top">
               <div class="ann-title-row"><span class="ann-title">Assignment 2 — Submission Reminder</span></div>
               <div class="ann-actions">
-                <span class="ann-date">Feb 10, 2026</span>
-                <button class="ann-btn read-btn" title="Mark as read"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Read</button>
-                <button class="ann-btn dismiss-btn" title="Dismiss"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+                <span class="ann-date">Feb 10, 2025</span>
+                <button class="ann-btn read-btn" title="Mark as read">✓ Read</button>
+                <button class="ann-btn dismiss-btn" title="Dismiss">✕</button>
               </div>
             </div>
             <p class="ann-text">Assignment 2 on flowcharts and pseudocode is due this Friday, Feb 14th by 11:59 PM. Submit via the portal. Late submissions will incur a 10% penalty per day.</p>
             <div class="ann-meta">
-              <span class="ann-tag"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Assignment</span>
-              <span class="ann-tag"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Due Friday</span>
+              <span class="ann-tag">📝 Assignment</span>
+              <span class="ann-tag">⏰ Due Friday</span>
             </div>
           </div>
         </div>
@@ -1040,15 +876,15 @@ footer::before {
             <div class="ann-top">
               <div class="ann-title-row"><span class="ann-title">Lab Session Rescheduled</span></div>
               <div class="ann-actions">
-                <span class="ann-date">Feb 8, 2026</span>
-                <button class="ann-btn read-btn" title="Mark as read"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Read</button>
-                <button class="ann-btn dismiss-btn" title="Dismiss"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+                <span class="ann-date">Feb 8, 2025</span>
+                <button class="ann-btn read-btn" title="Mark as read">✓ Read</button>
+                <button class="ann-btn dismiss-btn" title="Dismiss">✕</button>
               </div>
             </div>
             <p class="ann-text">The Tuesday lab session (CSC 181) for next week has been moved to Thursday 2:00 PM – 4:00 PM due to infrastructure maintenance in Lab A. Location remains the same.</p>
             <div class="ann-meta">
-              <span class="ann-tag"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Rescheduled</span>
-              <span class="ann-tag"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Lab A</span>
+              <span class="ann-tag">🔄 Rescheduled</span>
+              <span class="ann-tag">📍 Lab A</span>
             </div>
           </div>
         </div>
@@ -1065,7 +901,7 @@ footer::before {
     <div class="card" style="animation: fadeUp 0.6s 0.25s ease both;">
       <div class="card-header">
         <div class="card-title">
-          <div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+          <div class="card-icon">📊</div>
           <h2>Overview</h2>
         </div>
       </div>
@@ -1084,7 +920,7 @@ footer::before {
             <div class="stlbl">Years</div>
           </div>
           <div class="stat-tile" data-page="semester" style="cursor:pointer;">
-            <div class="stnum">1/2</div>
+            <div class="stnum">2/2</div>
             <div class="stlbl">Semester</div>
           </div>
         </div>
@@ -1095,7 +931,7 @@ footer::before {
     <div class="card" id="reps" style="animation: fadeUp 0.6s 0.35s ease both;">
       <div class="card-header">
         <div class="card-title">
-          <div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="card-icon">👥</div>
           <h2>Class Reps</h2>
         </div>
       </div>
@@ -1123,7 +959,7 @@ footer::before {
     <div class="card" style="animation: fadeUp 0.6s 0.45s ease both;">
       <div class="card-header">
         <div class="card-title">
-          <div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div class="card-icon">📅</div>
           <h2>Upcoming</h2>
         </div>
         <span class="card-badge gold">4 events</span>
@@ -1131,37 +967,37 @@ footer::before {
       <div class="events-body">
 
         <div class="event-row">
-          <div class="event-cal"><div class="eday">14</div><div class="emon">Feb</div></div>
-          <div class="event-info">
-            <div class="event-title">Assignment 2 Due</div>
-            <p class="event-desc">Flowcharts & pseudocode — 11:59 PM</p>
-            <span class="event-chip assign">Assignment</span>
-          </div>
-        </div>
-
-        <div class="event-row">
-          <div class="event-cal" style="background:var(--gold); color:var(--ink)"><div class="eday">21</div><div class="emon">Feb</div></div>
-          <div class="event-info">
-            <div class="event-title">MTH 101 Class Test</div>
-            <p class="event-desc">Chapters 1–4 · Room 204</p>
-            <span class="event-chip test">Test</span>
-          </div>
-        </div>
-
-        <div class="event-row">
-          <div class="event-cal" style="background:var(--accent)"><div class="eday">05</div><div class="emon">Mar</div></div>
+          <div class="event-cal" style="background:var(--accent)"><div class="eday">09</div><div class="emon">Sep</div></div>
           <div class="event-info">
             <div class="event-title">Mid-Semester Exam</div>
-            <p class="event-desc">COS 101 · Main Auditorium · 10 AM</p>
+            <p class="event-desc">COS 102 · Main Auditorium · 10 AM</p>
             <span class="event-chip exam">Exam</span>
           </div>
         </div>
 
         <div class="event-row">
-          <div class="event-cal"><div class="eday">12</div><div class="emon">Mar</div></div>
+          <div class="event-cal" style="background:var(--gold); color:var(--ink)"><div class="eday">15</div><div class="emon">Sep</div></div>
           <div class="event-info">
-            <div class="event-title">Lab Project Submission</div>
-            <p class="event-desc">CSC 181 Group project</p>
+            <div class="event-title">MTH 102 Class Test</div>
+            <p class="event-desc">Chapters 1–4 · NSB 3</p>
+            <span class="event-chip test">Test</span>
+          </div>
+        </div>
+
+        <div class="event-row">
+          <div class="event-cal"><div class="eday">22</div><div class="emon">Sep</div></div>
+          <div class="event-info">
+            <div class="event-title">PHY 108 Lab Report Due</div>
+            <p class="event-desc">Experiment write-up · NSB 5</p>
+            <span class="event-chip assign">Assignment</span>
+          </div>
+        </div>
+
+        <div class="event-row">
+          <div class="event-cal"><div class="eday">10</div><div class="emon">Oct</div></div>
+          <div class="event-info">
+            <div class="event-title">CSC 182 Project Submission</div>
+            <p class="event-desc">Computer Practical group project</p>
             <span class="event-chip assign">Project</span>
           </div>
         </div>
@@ -1191,13 +1027,13 @@ footer::before {
     <div class="footer-col">
       <h4>Courses</h4>
       <ul>
-        <li><a href="#">COS 101</a></li>
-        <li><a href="#">MTH 101</a></li>
-        <li><a href="#">PHY 101</a></li>
-        <li><a href="#">CSC 181</a></li>
-        <li><a href="#">GST 111</a></li>
-        <li><a href="#">PHY 107</a></li>
-        <li><a href="#">STA 111</a></li>
+        <li><a href="#">COS 102</a></li>
+        <li><a href="#">MTH 102</a></li>
+        <li><a href="#">PHY 102</a></li>
+        <li><a href="#">PHY 108</a></li>
+        <li><a href="#">CSC 102</a></li>
+        <li><a href="#">CSC 182</a></li>
+        <li><a href="#">GST 112</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -1237,7 +1073,7 @@ footer::before {
     <div class="detail-left">
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8a5 5 0 0 1 0 8"/><path d="M3 11v2a1 1 0 0 0 1 1h1l3 3V8L5 11H4a1 1 0 0 0-1 1z"/><path d="M11.5 7.5a5 5 0 0 1 0 9"/></svg></div><h2>Full Announcement</h2></div>
+          <div class="card-title"><div class="card-icon">📢</div><h2>Full Announcement</h2></div>
         </div>
         <div style="padding:24px 32px;" id="ann-detail-body"></div>
       </div>
@@ -1245,7 +1081,7 @@ footer::before {
     <div class="detail-right">
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h2>Details</h2></div>
+          <div class="card-title"><div class="card-icon">📋</div><h2>Details</h2></div>
         </div>
         <div style="padding:8px 28px 20px;" id="ann-detail-info"></div>
       </div>
@@ -1270,13 +1106,13 @@ footer::before {
     <div class="detail-left">
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h2>Profile</h2></div>
+          <div class="card-title"><div class="card-icon">👤</div><h2>Profile</h2></div>
         </div>
         <div style="padding:8px 32px 20px;" id="rep-detail-profile"></div>
       </div>
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h2>Responsibilities</h2></div>
+          <div class="card-title"><div class="card-icon">📋</div><h2>Responsibilities</h2></div>
         </div>
         <div style="padding:8px 32px 20px;" id="rep-detail-duties"></div>
       </div>
@@ -1284,13 +1120,13 @@ footer::before {
     <div class="detail-right">
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.36 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><h2>Contact</h2></div>
+          <div class="card-title"><div class="card-icon">📞</div><h2>Contact</h2></div>
         </div>
         <div style="padding:8px 28px 20px;" id="rep-detail-contact"></div>
       </div>
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h2>Quick Stats</h2></div>
+          <div class="card-title"><div class="card-icon">📊</div><h2>Quick Stats</h2></div>
         </div>
         <div style="padding:16px 28px 20px;" id="rep-detail-stats"></div>
       </div>
@@ -1318,7 +1154,7 @@ footer::before {
   <div class="detail-body" style="grid-template-columns:1fr 300px;">
     <div class="detail-left">
       <div class="card">
-        <div class="card-header"><div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h2>Class Breakdown</h2></div></div>
+        <div class="card-header"><div class="card-title"><div class="card-icon">👨‍🎓</div><h2>Class Breakdown</h2></div></div>
         <div style="padding:8px 32px 24px;">
           <div class="dinfo-row"><span class="dinfo-label">Total Students</span><span class="dinfo-val">398</span></div>
           <div class="dinfo-row"><span class="dinfo-label">Department</span><span class="dinfo-val">Computer Science</span></div>
@@ -1333,7 +1169,7 @@ footer::before {
     </div>
     <div class="detail-right">
       <div class="card">
-        <div class="card-header"><div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h2>Stats</h2></div></div>
+        <div class="card-header"><div class="card-title"><div class="card-icon">📊</div><h2>Stats</h2></div></div>
         <div style="padding:16px 28px 20px;">
           <div class="rep-stats-grid">
             <div class="rep-stat-tile"><div class="rep-stat-num">398</div><div class="rep-stat-lbl">Total</div></div>
@@ -1355,7 +1191,7 @@ footer::before {
       <div class="detail-stripe" style="background:var(--accent)"></div>
       <div>
         <div class="detail-code" style="font-size:clamp(2.5rem,5vw,4rem);">7 <span style="color:var(--accent);font-style:italic;">Courses</span></div>
-        <div class="detail-name">1st Semester · 2025/2026 Session</div>
+        <div class="detail-name">2nd Semester · 2025/2026 Session</div>
         <div class="detail-pills" style="margin-top:10px;">
           <span class="detail-pill accent">15 Credit Units</span>
           <span class="detail-pill">100 Level</span>
@@ -1366,34 +1202,34 @@ footer::before {
   <div class="detail-body" style="grid-template-columns:1fr;">
     <div class="detail-left">
       <div class="card">
-        <div class="card-header"><div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><h2>All Courses This Semester</h2></div><span class="card-badge teal">7 courses</span></div>
+        <div class="card-header"><div class="card-title"><div class="card-icon">📚</div><h2>All Courses This Semester</h2></div><span class="card-badge teal">7 courses</span></div>
         <div style="padding:8px 32px 24px;">
           <div class="dinfo-row">
-            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#3498db;display:inline-block;flex-shrink:0;"></span><strong>MTH 101</strong> — Mathematics I — Algebra &amp; Calculus</span>
-            <span class="dinfo-val">3 units</span>
-          </div>
-          <div class="dinfo-row">
-            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#e67e22;display:inline-block;flex-shrink:0;"></span><strong>PHY 101</strong> — Physics I — Mechanics &amp; Waves</span>
-            <span class="dinfo-val">3 units</span>
-          </div>
-          <div class="dinfo-row">
-            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#c8492a;display:inline-block;flex-shrink:0;"></span><strong>COS 101</strong> — Introduction to Computer Science</span>
+            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#c8492a;display:inline-block;flex-shrink:0;"></span><strong>COS 102</strong> — Problem Solving and Algorithms</span>
             <span class="dinfo-val">2 units</span>
           </div>
           <div class="dinfo-row">
-            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#9b59b6;display:inline-block;flex-shrink:0;"></span><strong>CSC 181</strong> — Computer Science Laboratory</span>
-            <span class="dinfo-val">1 unit</span>
+            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#3498db;display:inline-block;flex-shrink:0;"></span><strong>MTH 102</strong> — Elementary Mathematics</span>
+            <span class="dinfo-val">2 units</span>
           </div>
           <div class="dinfo-row">
-            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#e74c3c;display:inline-block;flex-shrink:0;"></span><strong>STA 111</strong> — Introduction to Statistics</span>
+            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#e67e22;display:inline-block;flex-shrink:0;"></span><strong>PHY 102</strong> — General Physics II</span>
+            <span class="dinfo-val">2 units</span>
+          </div>
+          <div class="dinfo-row">
+            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#d4a017;display:inline-block;flex-shrink:0;"></span><strong>PHY 108</strong> — General Practical Physics II</span>
+            <span class="dinfo-val">2 units</span>
+          </div>
+          <div class="dinfo-row">
+            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#8e44ad;display:inline-block;flex-shrink:0;"></span><strong>CSC 102</strong> — Intro to Computer Hardware and Electronics</span>
             <span class="dinfo-val">3 units</span>
           </div>
           <div class="dinfo-row">
-            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#d4a017;display:inline-block;flex-shrink:0;"></span><strong>PHY 107</strong> — Physics Lab — Practical Sessions</span>
-            <span class="dinfo-val">1 unit</span>
+            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#9b59b6;display:inline-block;flex-shrink:0;"></span><strong>CSC 182</strong> — Computer Practical</span>
+            <span class="dinfo-val">2 units</span>
           </div>
           <div class="dinfo-row">
-            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#1abc9c;display:inline-block;flex-shrink:0;"></span><strong>GST 111</strong> — Communication in English</span>
+            <span class="dinfo-label" style="display:flex;align-items:center;gap:10px;"><span style="width:10px;height:10px;border-radius:50%;background:#1abc9c;display:inline-block;flex-shrink:0;"></span><strong>GST 112</strong> — Nigerian Peoples and Culture</span>
             <span class="dinfo-val">2 units</span>
           </div>
           <div class="dinfo-row" style="margin-top:8px;border-top:2px solid var(--border);padding-top:16px;">
@@ -1425,31 +1261,31 @@ footer::before {
   <div class="detail-body" style="grid-template-columns:1fr 300px;">
     <div class="detail-left">
       <div class="card">
-        <div class="card-header"><div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h2>Programme Roadmap</h2></div></div>
+        <div class="card-header"><div class="card-title"><div class="card-icon">🎓</div><h2>Programme Roadmap</h2></div></div>
         <div style="padding:8px 32px 24px;">
           <div class="topic-item">
-            <div class="topic-num" style="background:var(--accent);"><svg width='10' height='10' fill='currentColor' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='var(--accent)'/></svg></div>
+            <div class="topic-num" style="background:var(--accent);">▶</div>
             <div>
               <div class="topic-title">Year 1 (100L) <span style="font-size:0.7rem;background:var(--accent);color:white;padding:2px 8px;border-radius:20px;margin-left:6px;">You are here</span></div>
               <div class="topic-weeks">Foundation courses — Maths, Physics, Intro to CS, Statistics, English</div>
             </div>
           </div>
           <div class="topic-item">
-            <div class="topic-num" style="background:var(--ink-light);"><svg width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='9'/></svg></div>
+            <div class="topic-num" style="background:var(--ink-light);">○</div>
             <div>
               <div class="topic-title">Year 2 (200L)</div>
               <div class="topic-weeks">Core CS — Data Structures, Algorithms, Discrete Maths, Logic</div>
             </div>
           </div>
           <div class="topic-item">
-            <div class="topic-num" style="background:var(--ink-light);"><svg width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='9'/></svg></div>
+            <div class="topic-num" style="background:var(--ink-light);">○</div>
             <div>
               <div class="topic-title">Year 3 (300L)</div>
               <div class="topic-weeks">Advanced CS — Operating Systems, Networks, Databases, Software Engineering</div>
             </div>
           </div>
           <div class="topic-item">
-            <div class="topic-num" style="background:var(--ink-light);"><svg width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='9'/></svg></div>
+            <div class="topic-num" style="background:var(--ink-light);">○</div>
             <div>
               <div class="topic-title">Year 4 (400L)</div>
               <div class="topic-weeks">Final year — AI, Project, Electives, Industrial Training</div>
@@ -1460,7 +1296,7 @@ footer::before {
     </div>
     <div class="detail-right">
       <div class="card">
-        <div class="card-header"><div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h2>Progress</h2></div></div>
+        <div class="card-header"><div class="card-title"><div class="card-icon">📅</div><h2>Progress</h2></div></div>
         <div style="padding:16px 28px 20px;">
           <div class="rep-stats-grid">
             <div class="rep-stat-tile"><div class="rep-stat-num">1</div><div class="rep-stat-lbl">Current</div></div>
@@ -1481,11 +1317,11 @@ footer::before {
     <div class="detail-header">
       <div class="detail-stripe" style="background:#9b59b6"></div>
       <div>
-        <div class="detail-code" style="font-size:clamp(2.5rem,5vw,4rem);">Semester <span style="color:#9b59b6;font-style:italic;">1 of 2</span></div>
-        <div class="detail-name">1st Semester · 2025/2026 Academic Session</div>
+        <div class="detail-code" style="font-size:clamp(2.5rem,5vw,4rem);">Semester <span style="color:#9b59b6;font-style:italic;">2 of 2</span></div>
+        <div class="detail-name">2nd Semester · 2025/2026 Academic Session</div>
         <div class="detail-pills" style="margin-top:10px;">
           <span class="detail-pill" style="background:#9b59b6;">Active Semester</span>
-          <span class="detail-pill gold">Spring 2026</span>
+          <span class="detail-pill gold">Fall 2026</span>
         </div>
       </div>
     </div>
@@ -1493,21 +1329,21 @@ footer::before {
   <div class="detail-body" style="grid-template-columns:1fr 300px;">
     <div class="detail-left">
       <div class="card">
-        <div class="card-header"><div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h2>Semester Timeline</h2></div></div>
+        <div class="card-header"><div class="card-title"><div class="card-icon">📆</div><h2>Semester Timeline</h2></div></div>
         <div style="padding:8px 32px 24px;">
-          <div class="dinfo-row"><span class="dinfo-label">Semester</span><span class="dinfo-val">1st Semester</span></div>
+          <div class="dinfo-row"><span class="dinfo-label">Semester</span><span class="dinfo-val">2nd Semester</span></div>
           <div class="dinfo-row"><span class="dinfo-label">Session</span><span class="dinfo-val">2025/2026</span></div>
-          <div class="dinfo-row"><span class="dinfo-label">Start Date</span><span class="dinfo-val">January 2026</span></div>
-          <div class="dinfo-row"><span class="dinfo-label">Mid-Semester Exam</span><span class="dinfo-val">March 5, 2026</span></div>
-          <div class="dinfo-row"><span class="dinfo-label">End of Semester</span><span class="dinfo-val">May 2026</span></div>
+          <div class="dinfo-row"><span class="dinfo-label">Start Date</span><span class="dinfo-val">July 2026 (est.)</span></div>
+          <div class="dinfo-row"><span class="dinfo-label">Mid-Semester Exam</span><span class="dinfo-val">September 9, 2026 (est.)</span></div>
+          <div class="dinfo-row"><span class="dinfo-label">End of Semester</span><span class="dinfo-val">October 2026 (est.)</span></div>
           <div class="dinfo-row"><span class="dinfo-label">Total Weeks</span><span class="dinfo-val">15 Weeks</span></div>
-          <div class="dinfo-row"><span class="dinfo-label">Status</span><span class="dinfo-val" style="color:var(--teal);"><svg width="8" height="8" viewBox="0 0 24 24" fill="var(--teal)"><circle cx="12" cy="12" r="10"/></svg> Active</span></div>
+          <div class="dinfo-row"><span class="dinfo-label">Status</span><span class="dinfo-val" style="color:var(--teal);">● Active</span></div>
         </div>
       </div>
     </div>
     <div class="detail-right">
       <div class="card">
-        <div class="card-header"><div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h2>At a Glance</h2></div></div>
+        <div class="card-header"><div class="card-title"><div class="card-icon">📊</div><h2>At a Glance</h2></div></div>
         <div style="padding:16px 28px 20px;">
           <div class="rep-stats-grid">
             <div class="rep-stat-tile"><div class="rep-stat-num">1</div><div class="rep-stat-lbl">Current</div></div>
@@ -1529,7 +1365,7 @@ footer::before {
       <div class="detail-stripe" style="background:var(--ink)"></div>
       <div>
         <div class="detail-code" style="font-size:clamp(2rem,4vw,3.5rem);">Weekly <span style="color:var(--accent-warm);font-style:italic;">Timetable</span></div>
-        <div class="detail-name">1st Semester · Spring 2026</div>
+        <div class="detail-name">1st Semester · Spring 2025</div>
         <div class="detail-pills" style="margin-top:10px;">
           <span class="detail-pill">7 Courses</span>
           <span class="detail-pill accent">Next: COS 101 — Wed 8AM</span>
@@ -1553,12 +1389,12 @@ footer::before {
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#3498db;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">MTH 101</div><div style="font-size:0.82rem;color:var(--ink-light);">Mathematics I</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">10:00 – 12:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Room 204, Block B</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">10:00 – 12:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Room 204, Block B</div></div>
           </div>
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#e74c3c;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">STA 111</div><div style="font-size:0.82rem;color:var(--ink-light);">Introduction to Statistics</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">12:00 – 2:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Room 301, Block D</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">12:00 – 2:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Room 301, Block D</div></div>
           </div>
         </div>
       </div>
@@ -1576,12 +1412,12 @@ footer::before {
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#e67e22;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">PHY 101</div><div style="font-size:0.82rem;color:var(--ink-light);">Physics I — Mechanics &amp; Waves</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">8:00 – 10:00 AM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Physics Hall, Block C</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">8:00 – 10:00 AM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Physics Hall, Block C</div></div>
           </div>
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#9b59b6;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">CSC 181</div><div style="font-size:0.82rem;color:var(--ink-light);">Computer Science Laboratory</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">2:00 – 4:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Lab A, ICT Centre</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">2:00 – 4:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Lab A, ICT Centre</div></div>
           </div>
         </div>
       </div>
@@ -1599,12 +1435,12 @@ footer::before {
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:rgba(200,73,42,0.05);border-radius:12px;border:1px solid rgba(200,73,42,0.2);">
             <div style="width:5px;height:48px;border-radius:3px;background:#c8492a;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">COS 101 <span style="font-size:0.65rem;background:var(--accent);color:white;padding:2px 8px;border-radius:20px;margin-left:4px;">Next</span></div><div style="font-size:0.82rem;color:var(--ink-light);">Introduction to Computer Science</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">8:00 – 10:00 AM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Main Hall, Block A</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">8:00 – 10:00 AM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Main Hall, Block A</div></div>
           </div>
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#e74c3c;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">STA 111</div><div style="font-size:0.82rem;color:var(--ink-light);">Introduction to Statistics</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">12:00 – 2:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Room 301, Block D</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">12:00 – 2:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Room 301, Block D</div></div>
           </div>
         </div>
       </div>
@@ -1622,12 +1458,12 @@ footer::before {
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#3498db;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">MTH 101</div><div style="font-size:0.82rem;color:var(--ink-light);">Mathematics I</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">10:00 – 12:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Room 204, Block B</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">10:00 – 12:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Room 204, Block B</div></div>
           </div>
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#1abc9c;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">GST 111</div><div style="font-size:0.82rem;color:var(--ink-light);">Communication in English</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">2:00 – 4:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Arts Hall, Block E</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">2:00 – 4:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Arts Hall, Block E</div></div>
           </div>
         </div>
       </div>
@@ -1645,12 +1481,12 @@ footer::before {
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#e67e22;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">PHY 101</div><div style="font-size:0.82rem;color:var(--ink-light);">Physics I — Mechanics &amp; Waves</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">8:00 – 10:00 AM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Physics Hall, Block C</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">8:00 – 10:00 AM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Physics Hall, Block C</div></div>
           </div>
           <div style="display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--cream);border-radius:12px;border:1px solid var(--border);">
             <div style="width:5px;height:48px;border-radius:3px;background:#d4a017;flex-shrink:0;"></div>
             <div style="flex:1;"><div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;">PHY 107</div><div style="font-size:0.82rem;color:var(--ink-light);">Physics Lab — Practical Sessions</div></div>
-            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">10:00 AM – 1:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Physics Lab, Block C</div></div>
+            <div style="text-align:right;"><div style="font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--ink-light);">10:00 AM – 1:00 PM</div><div style="font-size:0.73rem;color:var(--ink-light);margin-top:2px;">📍 Physics Lab, Block C</div></div>
           </div>
         </div>
       </div>
@@ -2031,7 +1867,7 @@ footer::before {
       <!-- COURSE INFO -->
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h2>Course Info</h2></div>
+          <div class="card-title"><div class="card-icon">📋</div><h2>Course Info</h2></div>
         </div>
         <div style="padding: 8px 32px 20px;" id="detail-info"></div>
       </div>
@@ -2039,7 +1875,7 @@ footer::before {
       <!-- COURSE TOPICS -->
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><h2>Course Topics</h2></div>
+          <div class="card-title"><div class="card-icon">📖</div><h2>Course Topics</h2></div>
           <span class="card-badge teal" id="detail-topics-count"></span>
         </div>
         <div style="padding: 8px 32px 20px;" id="detail-topics"></div>
@@ -2051,7 +1887,7 @@ footer::before {
       <!-- LECTURER -->
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h2>Lecturer</h2></div>
+          <div class="card-title"><div class="card-icon">👨‍🏫</div><h2>Lecturer</h2></div>
         </div>
         <div style="padding: 20px 28px;" id="detail-lecturer"></div>
       </div>
@@ -2059,7 +1895,7 @@ footer::before {
       <!-- ASSIGNMENTS -->
       <div class="card">
         <div class="card-header">
-          <div class="card-title"><div class="card-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h2>Assignments</h2></div>
+          <div class="card-title"><div class="card-icon">📝</div><h2>Assignments</h2></div>
           <span class="card-badge" id="detail-assign-count"></span>
         </div>
         <div style="padding: 8px 28px 16px;" id="detail-assignments"></div>
@@ -2086,9 +1922,9 @@ const COURSES = {
       { title: 'Integration', weeks: 'Week 11–12' },
     ],
     assignments: [
-      { title: 'Assignment 1 — Number Sets', due: 'Jan 31, 2026', status: 'done' },
-      { title: 'Assignment 2 — Algebra', due: 'Feb 21, 2026', status: 'pending' },
-      { title: 'Mid-Semester Test', due: 'Mar 5, 2026', status: 'upcoming' },
+      { title: 'Assignment 1 — Number Sets', due: 'Jan 31, 2025', status: 'done' },
+      { title: 'Assignment 2 — Algebra', due: 'Feb 21, 2025', status: 'pending' },
+      { title: 'Mid-Semester Test', due: 'Mar 5, 2025', status: 'upcoming' },
     ]
   },
   'phy101': {
@@ -2108,8 +1944,8 @@ const COURSES = {
       { title: 'Relative motion, Application of Newtonian mechanics, Equations of Motion.', weeks: 'Dr. EKAH' },
     ],
     assignments: [
-      { title: 'Lab Report 1 — Measurements', due: 'Feb 7, 2026', status: 'done' },
-      { title: 'Assignment 1 — Kinematics', due: 'Feb 28, 2026', status: 'pending' },
+      { title: 'Lab Report 1 — Measurements', due: 'Feb 7, 2025', status: 'done' },
+      { title: 'Assignment 1 — Kinematics', due: 'Feb 28, 2025', status: 'pending' },
     ]
   },
   'cos101': {
@@ -2127,9 +1963,9 @@ const COURSES = {
       { title: 'Internet & Networks', weeks: 'Week 12' },
     ],
     assignments: [
-      { title: 'Assignment 1 — History of Computing', due: 'Jan 29, 2026', status: 'done' },
-      { title: 'Assignment 2 — Flowcharts', due: 'Feb 14, 2026', status: 'pending' },
-      { title: 'Mid-Semester Exam', due: 'Mar 5, 2026', status: 'upcoming' },
+      { title: 'Assignment 1 — History of Computing', due: 'Jan 29, 2025', status: 'done' },
+      { title: 'Assignment 2 — Flowcharts', due: 'Feb 14, 2025', status: 'pending' },
+      { title: 'Mid-Semester Exam', due: 'Mar 5, 2025', status: 'upcoming' },
     ]
   },
   'csc181': {
@@ -2146,9 +1982,9 @@ const COURSES = {
       { title: 'Group Project', weeks: 'Week 12–13' },
     ],
     assignments: [
-      { title: 'Lab 1 — Linux Commands', due: 'Feb 4, 2026', status: 'done' },
-      { title: 'Lab 2 — Python Basics', due: 'Feb 18, 2026', status: 'pending' },
-      { title: 'Group Project Submission', due: 'Mar 12, 2026', status: 'upcoming' },
+      { title: 'Lab 1 — Linux Commands', due: 'Feb 4, 2025', status: 'done' },
+      { title: 'Lab 2 — Python Basics', due: 'Feb 18, 2025', status: 'pending' },
+      { title: 'Group Project Submission', due: 'Mar 12, 2025', status: 'upcoming' },
     ]
   },
   'sta111': {
@@ -2165,8 +2001,8 @@ const COURSES = {
       { title: 'Statistical Inference', weeks: 'Week 11–12' },
     ],
     assignments: [
-      { title: 'Assignment 1 — Frequency Tables', due: 'Feb 3, 2026', status: 'done' },
-      { title: 'Assignment 2 — Probability', due: 'Mar 3, 2026', status: 'upcoming' },
+      { title: 'Assignment 1 — Frequency Tables', due: 'Feb 3, 2025', status: 'done' },
+      { title: 'Assignment 2 — Probability', due: 'Mar 3, 2025', status: 'upcoming' },
     ]
   },
   'phy107': {
@@ -2180,8 +2016,8 @@ const COURSES = {
       { title: 'Experiment 3 — Ohm\'s Law', weeks: 'Week 6' }
     ],
     assignments: [
-      { title: 'Lab Report 1 — Pendulum', due: 'Feb 10, 2026', status: 'done' },
-      { title: 'Lab Report 2 — Hooke\'s Law', due: 'Feb 24, 2026', status: 'pending' },
+      { title: 'Lab Report 1 — Pendulum', due: 'Feb 10, 2025', status: 'done' },
+      { title: 'Lab Report 2 — Hooke\'s Law', due: 'Feb 24, 2025', status: 'pending' },
     ]
   },
   'gst111': {
@@ -2198,8 +2034,8 @@ const COURSES = {
       { title: 'Presentation Skills', weeks: 'Week 12' },
     ],
     assignments: [
-      { title: 'Essay 1 — Personal Statement', due: 'Feb 6, 2026', status: 'done' },
-      { title: 'Essay 2 — Argumentative', due: 'Feb 27, 2026', status: 'pending' },
+      { title: 'Essay 1 — Personal Statement', due: 'Feb 6, 2025', status: 'done' },
+      { title: 'Essay 2 — Argumentative', due: 'Feb 27, 2025', status: 'pending' },
     ]
   }
 };
@@ -2235,7 +2071,7 @@ function showCourse(id) {
   pillsEl.innerHTML = `
     <span class="detail-pill">${c.days}</span>
     <span class="detail-pill accent">${c.time}</span>
-    <span class="detail-pill teal"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> ${c.venue}</span>
+    <span class="detail-pill teal">📍 ${c.venue}</span>
     <span class="detail-pill gold">${c.units} Units</span>
   `;
 
@@ -2279,7 +2115,7 @@ function showCourse(id) {
 
   // assignments
   const statusMap = { done: 'status-done', pending: 'status-pending', upcoming: 'status-upcoming' };
-  const statusLabel = { done: '<svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Done', pending: '<svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Pending', upcoming: '<svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="17" x2="12" y2="22"/><path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24z"/></svg> Upcoming' };
+  const statusLabel = { done: '✓ Done', pending: '⏳ Pending', upcoming: '📌 Upcoming' };
   document.getElementById('detail-assign-count').textContent = `${c.assignments.length}`;
   document.getElementById('detail-assignments').innerHTML = c.assignments.map(a => `
     <div class="assign-row">
@@ -2298,7 +2134,7 @@ function showCourse(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.title = `NASCO · ${c.code}`;
   history.pushState({ course: id }, '', `#${id}`);
-  showToast(`Opened ${c.code}`, 'info');
+  showToast(`📚 Opened ${c.code}`, 'info');
 }
 
 // ── BACK BUTTON ──
@@ -2377,8 +2213,8 @@ filterBtns.forEach(btn => {
       if (show) visible++;
     });
     showToast(day === 'all'
-      ? `Showing all 7 courses`
-      : `${visible} course${visible !== 1 ? 's' : ''} on ${btn.textContent}`,
+      ? `📚 Showing all 7 courses`
+      : `📅 ${visible} course${visible !== 1 ? 's' : ''} on ${btn.textContent}`,
       'info');
   });
 });
@@ -2400,10 +2236,10 @@ document.querySelectorAll('.read-btn').forEach(btn => {
     const item = btn.closest('.ann-item');
     if (!item.classList.contains('is-read')) {
       item.classList.add('is-read');
-      btn.textContent = '<svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Read';
+      btn.textContent = '✓ Read';
       unreadCount = Math.max(0, unreadCount - 1);
       updateBadge();
-      showToast('Marked as read', 'success');
+      showToast('✓ Marked as read', 'success');
     }
   });
 });
@@ -2418,21 +2254,17 @@ document.querySelectorAll('.dismiss-btn').forEach(btn => {
     }
     item.classList.add('dismissing');
     item.addEventListener('animationend', () => item.remove(), { once: true });
-    showToast('Announcement dismissed', 'info');
+    showToast('🗑 Announcement dismissed', 'info');
   });
 });
 
 // ── 5. TOAST NOTIFICATIONS ──
 function showToast(message, type = 'info') {
   const container = document.getElementById('toast-container');
-  const icons = {
-    info: '<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
-    success: '<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>',
-    warning: '<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'
-  };
+  const icons = { info: '💬', success: '✅', warning: '⚠️' };
   const toast = document.createElement('div');
   toast.className = `toast toast-${type}`;
-  toast.innerHTML = `<span class="toast-icon">${icons[type] || icons.info}</span><span>${message}</span>`;
+  toast.innerHTML = `<span class="toast-icon">${icons[type] || '💬'}</span><span>${message}</span>`;
   container.appendChild(toast);
   setTimeout(() => {
     toast.classList.add('toast-exit');
@@ -2445,39 +2277,39 @@ function showToast(message, type = 'info') {
 const ANNOUNCEMENTS = {
   ann1: {
     title: 'Mid-Semester Exam Schedule Released',
-    date: 'February 14, 2026',
+    date: 'February 14, 2025',
     author: 'Dr. Emeka Okonkwo',
     authorRole: 'Course Lecturer, COS 101',
     avatarColor: 'var(--accent)',
     initials: 'Dr',
     stripeColor: 'var(--accent)',
-    tags: ['Main Auditorium', 'March 5', 'Important'],
+    tags: ['📍 Main Auditorium', '📅 March 5', '🔴 Important'],
     category: 'Examination',
-    fullText: `The mid-semester examination timetable for the 2025/2026 academic session has been officially published by the Department of Computer Science.\n\nCOS 101 — Introduction to Computer Science will be examined on Wednesday, March 5th, 2026 at 10:00 AM in the Main Auditorium, Block A.\n\nAll students are required to:\n• Arrive at least 15 minutes before the exam begins\n• Bring a valid student ID card\n• Come with approved stationery only (no unauthorized materials)\n• Switch off all mobile devices before entering the hall\n\nStudents who fail to arrive within 30 minutes of the start time will not be allowed to sit the examination. Contact your class rep for further clarification.`,
+    fullText: `The mid-semester examination timetable for the 2024/2025 academic session has been officially published by the Department of Computer Science.\n\nCOS 101 — Introduction to Computer Science will be examined on Wednesday, March 5th, 2025 at 10:00 AM in the Main Auditorium, Block A.\n\nAll students are required to:\n• Arrive at least 15 minutes before the exam begins\n• Bring a valid student ID card\n• Come with approved stationery only (no unauthorized materials)\n• Switch off all mobile devices before entering the hall\n\nStudents who fail to arrive within 30 minutes of the start time will not be allowed to sit the examination. Contact your class rep for further clarification.`,
   },
   ann2: {
     title: 'Assignment 2 — Submission Reminder',
-    date: 'February 10, 2026',
+    date: 'February 10, 2025',
     author: 'A. Monday Ebge (Class Rep)',
     authorRole: 'CSC 1/4 Class Representative',
     avatarColor: 'var(--teal)',
     initials: 'CR',
     stripeColor: 'var(--teal)',
-    tags: ['Assignment', 'Due Friday'],
+    tags: ['📝 Assignment', '⏰ Due Friday'],
     category: 'Assignment',
-    fullText: `This is a reminder that Assignment 2 for COS 101 — Introduction to Computer Science is due this Friday, February 14th, 2026 by 11:59 PM.\n\nThe assignment covers:\n• Flowcharts — draw a flowchart for at least 2 real-world problems\n• Pseudocode — write pseudocode for your solutions\n• Algorithm analysis — briefly explain the logic of each step\n\nSubmissions must be uploaded via the course portal in PDF format. Handwritten submissions will not be accepted.\n\nLate submissions will attract a 10% penalty per day. If you are experiencing any issues, contact the lecturer or the class rep immediately.`,
+    fullText: `This is a reminder that Assignment 2 for COS 101 — Introduction to Computer Science is due this Friday, February 14th, 2025 by 11:59 PM.\n\nThe assignment covers:\n• Flowcharts — draw a flowchart for at least 2 real-world problems\n• Pseudocode — write pseudocode for your solutions\n• Algorithm analysis — briefly explain the logic of each step\n\nSubmissions must be uploaded via the course portal in PDF format. Handwritten submissions will not be accepted.\n\nLate submissions will attract a 10% penalty per day. If you are experiencing any issues, contact the lecturer or the class rep immediately.`,
   },
   ann3: {
     title: 'Lab Session Rescheduled',
-    date: 'February 8, 2026',
+    date: 'February 8, 2025',
     author: 'Mr. Chidi Eze',
     authorRole: 'Lab Instructor, CSC 181',
     avatarColor: 'var(--gold)',
     initials: 'Dr',
     stripeColor: 'var(--gold)',
-    tags: ['Rescheduled', 'Lab A'],
+    tags: ['🔄 Rescheduled', '📍 Lab A'],
     category: 'Schedule Change',
-    fullText: `Please be informed that the Tuesday lab session for CSC 181 — Computer Science Laboratory scheduled for next week has been rescheduled.\n\nNew Details:\n• Date: Thursday, February 20th, 2026\n• Time: 2:00 PM – 4:00 PM\n• Venue: Lab A, ICT Centre (unchanged)\n\nReason: Routine infrastructure maintenance and system upgrade in Lab A will take place on Tuesday, February 18th. All lab equipment will be unavailable during this period.\n\nStudents are expected to come with their lab notebooks and the completed pre-lab worksheet for Experiment 3 (Ohm's Law). Attendance is compulsory. If you cannot make the rescheduled time, notify the instructor at least 24 hours in advance.`,
+    fullText: `Please be informed that the Tuesday lab session for CSC 181 — Computer Science Laboratory scheduled for next week has been rescheduled.\n\nNew Details:\n• Date: Thursday, February 20th, 2025\n• Time: 2:00 PM – 4:00 PM\n• Venue: Lab A, ICT Centre (unchanged)\n\nReason: Routine infrastructure maintenance and system upgrade in Lab A will take place on Tuesday, February 18th. All lab equipment will be unavailable during this period.\n\nStudents are expected to come with their lab notebooks and the completed pre-lab worksheet for Experiment 3 (Ohm's Law). Attendance is compulsory. If you cannot make the rescheduled time, notify the instructor at least 24 hours in advance.`,
   },
 };
 
@@ -2494,7 +2326,7 @@ const REPS = {
     email: 'not avaliable',
     phone: '+234 816 183 5614',
     office: 'Available after lectures',
-    bio: 'Monday Ebge is the elected Class Representative for CSC 1/4, 2026 academic session. He serves as the primary liaison between the 398 students of the department and faculty staff, ensuring smooth communication and academic coordination throughout the semester.',
+    bio: 'Monday Ebge is the elected Class Representative for CSC 1/4, 2025 academic session. He serves as the primary liaison between the 398 students of the department and faculty staff, ensuring smooth communication and academic coordination throughout the semester.',
     duties: [
       'Serve as liaison between students and department staff',
       'Communicate announcements, timetable changes and exam updates',
@@ -2569,7 +2401,7 @@ function showAnnouncement(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.title = `NASCO · ${a.title}`;
   history.pushState({ ann: id }, '', `#${id}`);
-  showToast('Opened announcement', 'info');
+  showToast(`📢 Opened announcement`, 'info');
 }
 
 // ── SHOW REP PROFILE ──
@@ -2607,9 +2439,9 @@ function showRep(id) {
   `).join('');
 
   document.getElementById('rep-detail-contact').innerHTML = `
-    <div class="dinfo-row"><span class="dinfo-label"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email</span><span class="dinfo-val" style="font-family:'DM Mono',monospace;font-size:0.72rem;">${r.email}</span></div>
-    <div class="dinfo-row"><span class="dinfo-label"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.36 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Phone</span><span class="dinfo-val">${r.phone}</span></div>
-    <div class="dinfo-row"><span class="dinfo-label"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Availability</span><span class="dinfo-val">${r.office}</span></div>
+    <div class="dinfo-row"><span class="dinfo-label">📧 Email</span><span class="dinfo-val" style="font-family:'DM Mono',monospace;font-size:0.72rem;">${r.email}</span></div>
+    <div class="dinfo-row"><span class="dinfo-label">📱 Phone</span><span class="dinfo-val">${r.phone}</span></div>
+    <div class="dinfo-row"><span class="dinfo-label">🏠 Availability</span><span class="dinfo-val">${r.office}</span></div>
   `;
 
   document.getElementById('rep-detail-stats').innerHTML = `
@@ -2628,7 +2460,7 @@ function showRep(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.title = `NASCO · ${r.name}`;
   history.pushState({ rep: id }, '', `#${id}`);
-  showToast(`Opened ${r.name}'s profile`, 'info');
+  showToast(`👤 Opened ${r.name}'s profile`, 'info');
 }
 
 // ── BACK BUTTONS FOR NEW PAGES ──
@@ -2690,7 +2522,7 @@ function showInfoPage(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   document.title = `NASCO · ${id.charAt(0).toUpperCase() + id.slice(1)}`;
   history.pushState({ info: id }, '', `#${id}`);
-  showToast(`Opened ${id} page`, 'info');
+  showToast(`📄 Opened ${id} page`, 'info');
 }
 
 // back buttons on info pages
@@ -2712,94 +2544,6 @@ document.querySelectorAll('.stat-tile[data-page]').forEach(tile => {
 // hero visual click → weekly schedule
 const heroVisual = document.getElementById('hero-visual-click');
 if (heroVisual) heroVisual.addEventListener('click', () => showInfoPage('schedule'));
-
-// ── LOGIN SYSTEM ──
-// Valid reg numbers: 25/CSC/001 to 25/CSC/398
-// Default password = reg number itself
-function isValidReg(reg) {
-  const clean = reg.trim().toUpperCase();
-  const match = clean.match(/^25\/CSC\/(\d{1,3})$/);
-  if (!match) return false;
-  const num = parseInt(match[1], 10);
-  return num >= 1 && num <= 398;
-}
-
-function normalizeReg(reg) {
-  const clean = reg.trim().toUpperCase();
-  const match = clean.match(/^25\/CSC\/(\d+)$/);
-  if (!match) return clean;
-  const num = parseInt(match[1], 10);
-  return '25/CSC/' + String(num).padStart(3, '0');
-}
-
-function doLogin() {
-  const reg = document.getElementById('login-reg').value.trim();
-  const pass = document.getElementById('login-pass').value.trim();
-  const err = document.getElementById('login-error');
-
-  if (!isValidReg(reg)) {
-    err.classList.add('show');
-    err.innerHTML = '<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:5px;flex-shrink:0"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Invalid registration number. Use format 25/CSC/001 to 25/CSC/398.';
-    return;
-  }
-
-  const normalized = normalizeReg(reg);
-  // password must match the reg number (case-insensitive)
-  if (pass.toUpperCase() !== normalized) {
-    err.classList.add('show');
-    err.innerHTML = '<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:5px;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Wrong password. Your default password is your registration number.';
-    return;
-  }
-
-  err.classList.remove('show');
-
-  // hide login, show portal
-  document.getElementById('login-page').style.display = 'none';
-  document.getElementById('main-nav').style.display = '';
-  document.getElementById('main-view').style.display = '';
-
-  // show user chip in nav
-  document.getElementById('nav-user-chip').style.display = '';
-  document.getElementById('nav-user-label').textContent = normalized;
-
-  showToast('Welcome, ' + normalized, 'success');
-  sessionStorage.setItem('nasco_user', normalized);
-}
-
-function doLogout() {
-  sessionStorage.removeItem('nasco_user');
-  document.getElementById('login-page').style.display = '';
-  document.getElementById('main-nav').style.display = 'none';
-  document.getElementById('main-view').style.display = 'none';
-  document.getElementById('login-reg').value = '';
-  document.getElementById('login-pass').value = '';
-  document.getElementById('nav-user-chip').style.display = 'none';
-  showMain();
-}
-
-// check session on load
-(function() {
-  const saved = sessionStorage.getItem('nasco_user');
-  if (saved) {
-    document.getElementById('login-page').style.display = 'none';
-    document.getElementById('main-nav').style.display = '';
-    document.getElementById('nav-user-chip').style.display = '';
-    document.getElementById('nav-user-label').textContent = saved;
-  } else {
-    document.getElementById('main-view').style.display = 'none';
-  }
-})();
-
-// login button click
-document.getElementById('login-btn').addEventListener('click', doLogin);
-
-// enter key on password
-document.getElementById('login-pass').addEventListener('keydown', e => {
-  if (e.key === 'Enter') doLogin();
-});
-document.getElementById('login-reg').addEventListener('keydown', e => {
-  if (e.key === 'Enter') document.getElementById('login-pass').focus();
-});
 
 </script>
 </body>
